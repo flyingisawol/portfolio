@@ -78,10 +78,10 @@ body {
 	font-family: "roboto", sans-serif !important;
 	display: flex;
 	justify-content: center;
-	font-size: 32px;
+	font-size: 62px;
 	letter-spacing: 2px;
 	-webkit-text-fill-color: rgb(243, 246, 244, 1);
-	text-shadow: 1px 0px rgb(221, 0, 221);
+	text-shadow: 1px 0px #222222;
 	z-index: 2;
 }
 
@@ -89,14 +89,14 @@ body {
 	font-family: "roboto", sans-serif !important;
 	display: flex;
 	justify-content: center;
-	font-size: 32px;
+	font-size: 62px;
 	color: black;
 	letter-spacing: 2px;
 	text-shadow: 1px 1px black;
-	filter: blur(10px);
-	opacity: .7;
+	filter: blur(12px);
+	opacity: .55;
 	z-index: 1;
-	margin-top: -45px;
+	margin-top: -80px;
 }
 
 .title {
@@ -109,7 +109,7 @@ body {
 	letter-spacing: 2px;
 	text-shadow: .5px 2px #333333;
 	z-index: 2;
-	margin-top: -10px;
+	margin-top: -20px;
 }
 
 .title-blur {
@@ -123,7 +123,7 @@ body {
 	letter-spacing: 2px;
 	filter: blur(10px);
 	opacity: .8;
-	margin-top: -29px;
+	margin-top: -39px;
 }
 
 .contacts {
@@ -131,7 +131,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-	padding: 0 25px 0 25px;
+	padding: 10px 25px 0 25px;
 }
 
 .contacts img {
