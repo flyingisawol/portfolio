@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44315628.css",
+    "main.js": "/static/js/main.f9b0b30b.js",
+    "static/js/787.373277dd.chunk.js": "/static/js/787.373277dd.chunk.js",
+    "static/media/the-exits-are-painted-orange.jpeg": "/static/media/the-exits-are-painted-orange.ec92b9055d22723069ee.jpeg",
+    "index.html": "/index.html",
+    "main.44315628.css.map": "/static/css/main.44315628.css.map",
+    "main.f9b0b30b.js.map": "/static/js/main.f9b0b30b.js.map",
+    "787.373277dd.chunk.js.map": "/static/js/787.373277dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44315628.css",
+    "static/js/main.f9b0b30b.js"
+  ]
+}
