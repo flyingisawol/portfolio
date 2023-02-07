@@ -16,13 +16,11 @@ html {
 }
 
 #root {
-	
-}
-
-body {
-	display: grid;
-	width: 100vw;
-	height: 90vh !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 /* // HEADER // */
@@ -32,6 +30,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 70px;
+	width: 100vw;
+	top: 0;
 }
 
 .header a {
@@ -43,8 +43,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	font-size: 18px;
-	gap: 40px;
 	list-style: none;
+	gap: 40px;
 }
 
 .header li {
@@ -62,16 +62,46 @@ body {
 
 /* // HOME // */
 
-.AK-SE {
+@media (max-width: 590px) {
+
+	.main {
+		background-position: 200% 200%;
+		max-height: 95vh;
+		min-height: 100vh;
+		max-width: 100vw;
+		background-size: cover!important;
+		background-position: 40% 10% !important;
+
+	}
+
+	.headings {
+		margin-top: -60px;
+	}
+
+	.headings .name {
+		font-size: 32px;
+	}
+
+	.headings .name-blur {
+		font-size: 28px;
+		margin-top: -30px;
+	}
+
+	.name-blur {
+		margin-top: 0;
+	}
+}
+
+.main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100vw;
-	height: 89vh !important;
-	background: url('../public/the-exits-are-painted-orange.jpeg');
+	min-height: 95vh;
+	min-width: 100vw;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-image: url("/public/the-exits-are-painted-orange.jpeg");
 }
 
 .name {
@@ -83,6 +113,7 @@ body {
 	-webkit-text-fill-color: rgb(243, 246, 244, 1);
 	text-shadow: 1px 0px #222222;
 	z-index: 2;
+	position: relative;
 }
 
 .name-blur {
@@ -109,6 +140,7 @@ body {
 	letter-spacing: 2px;
 	text-shadow: .5px 2px #333333;
 	z-index: 2;
+	position: relative;
 	margin-top: -20px;
 }
 
@@ -131,7 +163,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-	padding: 10px 25px 0 25px;
+	padding: 10px 25px 25px 25px;
 }
 
 .contacts img {
@@ -144,28 +176,142 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	position: fixed;
-	margin: 90px;
+	align-items: center;
 	background-color: #191414;
-	opacity: 0.86;
 	border-radius: 20px;
-	padding: 40px;
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
-.container p {
+.about {
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+	justify-content: center;
+	align-items: center;
+}
+
+.about1 {
+	display: flex;
 	color: white;
+	word-wrap: break-word;
+	width: 800px;
+}
+
+.about2 ul {
+	list-style: none;
+	max-width: 800px;
+}
+
+.about3 {
+	display: flex;
+	justify-content: start;
+	color: white;
+	width: 800px;
+	padding-top: 20px;
 }
 
 /* // PROOF OF WORK // */
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 60px;
+	color: white;
+	font-family: "roboto", sans-serif !important;
+}
+
+.projects {
+	display: flex;
+	color: white;
+}
+
+.layout h2 {
+	color: whitesmoke;
+}
+
+.project {
+	border: 2px solid white;
+	padding: 20px;
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 200px;
+	margin: 10px;
+	color: #BF40BF;
+	text-align: center;
+	text-decoration: inherit;
+}
+
+.tech {
+	color: white;
+	font-size: 14px;
+	padding: 10px;
+	text-decoration: inherit;
+}
 
 .container ul {
 	color: white;
 }
 
+/* // CONTACT // */
+
+.contact-me {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.contact-me img {
+	margin-top: 10px;
+	max-width: 50px;
+}
+
+.contact-background {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-position: center;
+	background-image: url("/public/the-exits-are-painted-orange.jpeg");
+}
+
+/* // SKILLS // */
+
+.tech-stack {
+	display: flex;
+	padding: 60px 15px 0 15px;
+}
+
+.tech-stack img {
+	max-width: 100px;
+	padding: 10px;
+}
+
 /* // FOOTER // */
 
-/* .footer {
+.footer {
+	position: fixed;
 	display: flex;
-	min-height: 70px;
-} */
+	justify-content: end;
+	width: 100vw;
+	left: 0;
+	bottom: 0;
+	padding: 20px;
+	z-index: 1;
+}
 
+.footer img {
+	max-height: 50px;
+	max-width: 40px;
+	opacity: .5;
+}
+
+/* // MOBILE OPTIMISATION // */
