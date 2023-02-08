@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
 const Skills = () => {
@@ -51,7 +52,7 @@ const Skills = () => {
             opacity: 1,
             scale: [1, 1.2, 1.2, 1],
             rotate: [0, 0, 180, 180, 0],
-            transition: { duration: 2, delay: .3 },
+            transition: { duration: 2, delay: 0.3 },
           }}
           transition={{
             duration: 2,
@@ -74,7 +75,7 @@ const Skills = () => {
           animate={{
             opacity: 1,
             rotate: [0, 0, 180, 180, 0],
-            transition: { duration: 2, delay: .6 },
+            transition: { duration: 2, delay: 0.6 },
           }}
           transition={{
             duration: 2,
@@ -97,7 +98,7 @@ const Skills = () => {
           animate={{
             opacity: 1,
             rotate: [0, 0, 180, 180, 0],
-            transition: { duration: 2, delay: .9 },
+            transition: { duration: 2, delay: 0.9 },
           }}
           transition={{
             duration: 2,
@@ -206,6 +207,39 @@ const Skills = () => {
           <img src="/flask.png" alt="" />
         </motion.div>
       </div>
+      <motion.div
+        className="skills"
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 1, duration: 1 },
+        }}
+      >
+        Beyond the logos and the languages, I have a willingness and eagerness
+        to learn, contribute & improve. <br />
+        <br />
+        This is in my opinion my primary competency and value-add as technology continues to
+        evolve, and we improve how we can integrate it to add value to our
+        lives.
+        <motion.button
+          className="thruButton"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 4, duration: 2 },
+          }}
+          whileHover={{
+            scale: 1.2,
+            boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+          }}
+        >
+          <Link to="/contact">Reach out</Link>
+        </motion.button>
+      </motion.div>
     </motion.div>
   )
 }

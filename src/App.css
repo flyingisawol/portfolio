@@ -20,7 +20,8 @@ html {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -37,6 +38,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	min-height: 70px;
+	max-height: 70px;
 	width: 100vw;
 }
 
@@ -69,8 +71,11 @@ ul li {
 	padding: 0;
 }
 
-@media (max-width: 590px) {
-	
+@media (max-width: 390px) {
+	.header ul {
+		max-width: 390px;
+		gap: 5px;
+	}
 }
 
 /* // HOME // */
@@ -80,8 +85,9 @@ ul li {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 95vh;
 	min-width: 100vw;
+	min-height: 90vh;
+	max-height: 90vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -155,6 +161,34 @@ ul li {
 	max-width: 40px;
 }
 
+.buttondiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.exploreButton a {
+	color: orange;
+}
+
+.exploreButton {
+	max-width: 250px;
+	height: 65px;
+	font-family: "roboto", sans-serif !important;
+	font-size: 20px;
+	padding: 16px 24px;
+	margin: 20px;
+	border-radius: 20px;
+	background-color: transparent;
+	text-decoration: none;
+	outline: none;
+	border: 3px solid white;
+	color: orange;
+	box-shadow: 2px 2px black;
+	text-shadow: 1px 1px black;
+}
+
 /* // MOBILE OPTIMISATION // */
 
 @media (max-width: 590px) {
@@ -196,7 +230,7 @@ ul li {
 	background-color: #191414;
 	border-radius: 20px;
 	min-width: 100vw;
-	min-height: 100vh;
+	min-height: 90vh;
 }
 
 .about {
@@ -210,18 +244,17 @@ ul li {
 
 .pop {
 	display: flex;
-	color: whitesmoke;
+	color: #7F00FF;
 	word-wrap: break-word;
 	width: 800px;
 	font-weight: 900;
 	font-family: "roboto", sans-serif !important;
-
+	font-size: 24px;
+	padding: 10px 0 10px;
 }
 
 .about1 {
-	display: flex;
 	color: white;
-	word-wrap: break-word;
 	width: 800px;
 }
 
@@ -230,25 +263,30 @@ ul li {
 	max-width: 800px;
 }
 
+.about2 ul li {
+	padding: 10px;
+}
+
 .about3 {
 	display: flex;
 	justify-content: start;
 	color: white;
 	width: 800px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .thruButton {
 	font-family: "roboto", sans-serif !important;
 	font-size: 20px;
 	padding: 16px 24px;
-	margin: 20px;
+	margin-top: 30px;
 	border-radius: 20px;
 	background-color: transparent;
 	text-decoration: none;
 	outline: none;
-	border: 2px solid #BF40BF;
-	color: #BF40BF;
+	border: 2px solid #7F00FF;
+	color: #7F00FF;
 }
 
 .thruButton a {
@@ -259,18 +297,26 @@ ul li {
 @media (max-width: 390px) {
 	.container .about .pop {
 		max-width: 350px;
+		margin: 0 10px 0 10px;
+		padding: 0 10px 0 10px;
 	}
 
 	.about1 {
 		max-width: 350px;
+		margin: 10px;
+		padding: 0 10px 0 10px;
 	}
 
 	.about2 {
 		max-width: 350px;
+		margin: 10px;
+		padding: 0 10px 0 10px;
 	}
 
 	.about3 {
 		max-width: 350px;
+		margin: 10px;
+		padding: 0 10px 0 10px;
 	}
 }
 
@@ -294,7 +340,7 @@ ul li {
 .layout h2 {
 	color: whitesmoke;
 	font-family: "roboto", sans-serif !important;
-
+	padding-bottom: 20px;
 }
 
 .project {
@@ -305,7 +351,7 @@ ul li {
 	min-height: 200px;
 	max-height: 200px;
 	margin: 10px;
-	color: #BF40BF;
+	color: #7F00FF;
 	text-align: center;
 }
 
@@ -319,6 +365,16 @@ ul li {
 	color: white;
 }
 
+@media (max-width: 390px) {
+	.layout .projects{
+		max-width: 390px;
+	}
+
+	.projects {
+		flex-direction: column;
+	}
+}
+
 /* // CONTACT // */
 
 .contact-me {
@@ -327,6 +383,8 @@ ul li {
 	color: white;
 	text-align: center;
 	padding-top: 60px;
+	font-family: "roboto", sans-serif !important;
+	font-size: 18px;
 }
 
 .contact-me img {
@@ -346,16 +404,53 @@ ul li {
 	background-image: url("/public/the-exits-are-painted-orange.jpeg");
 }
 
+@media (max-width: 390px) {
+	.conmtainer .contact-me {
+		max-width: 350px;
+	}
+}
+
 /* // SKILLS // */
 
 .tech-stack {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 60px 15px 0 15px;
+	flex: 1 1 0;
+	min-width: 0;
 }
 
 .tech-stack img {
 	max-width: 100px;
+	max-height: 100px;
 	padding: 10px;
+	min-width: 0;
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	padding-top: 210px;
+	padding-bottom: 20px;
+	font-family: "roboto", sans-serif !important;
+	width: 800px;
+
+}
+
+@media (max-width: 390px) {
+	.skills {
+		max-width: 350px;
+		overflow: wrap;
+	}
+
+	.tech-stack {
+		max-width: 50;;
+	}
 }
 
 /* // FOOTER // */

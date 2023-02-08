@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
 const Home = () => {
@@ -86,6 +87,10 @@ const Home = () => {
               opacity: 0,
               transition: { duration: 0.5 },
             }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
+            }}
           >
             <a href="https://linkedin.com/in/andrewwallacekeir">
               <img src="/in.png" alt="find me on linkedin" />
@@ -112,6 +117,10 @@ const Home = () => {
               opacity: 0,
               transition: { delay: 0, duration: 0.5 },
             }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
+            }}
           >
             <a href="https://github.com/flyingisawol">
               <img src="/github-mark-white.png" alt="find me on github" />
@@ -136,6 +145,10 @@ const Home = () => {
             exit={{
               opacity: 0,
               transition: { delay: 0, duration: 0.5 },
+            }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
             }}
           >
             <a href="mailto:ak@andrewkeir.xyz">
@@ -162,11 +175,34 @@ const Home = () => {
               opacity: 0,
               transition: { delay: 0, duration: 0.5 },
             }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
+            }}
           >
             <a href="http://discord.com/users/402312907209048064">
               <img src="/discord.png" alt="" />
             </a>
           </motion.div>
+        </div>
+        <div className="buttondiv">
+          <motion.button
+            className="exploreButton"
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              transition: { delay: 6, duration: 2 },
+            }}
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: "rgb(25, 25, 25, .4)",
+              boxShadow: "0px 0px 8px rgb(255, 255, 255",
+            }}
+          >
+            <Link to="/about">Explore</Link>
+          </motion.button>
         </div>
       </motion.div>
     </>

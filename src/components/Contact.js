@@ -10,11 +10,19 @@ const Contact = () => {
         exit={{
           opacity: 0,
           x: window.innerWidth,
-          width: 0,
           transition: { duration: 0.3 },
         }}
       >
-      <motion.div className="contact-me">
+      <motion.div 
+      className="contact-me"
+      initial={{
+        opacity: 0
+       }}
+       animate={{
+        opacity: 1,
+        transition: { delay: 1, duration: .5 }
+       }}
+      >
          Wow. You made it this far !!    
         <br />
         <br />
@@ -30,18 +38,20 @@ const Contact = () => {
               opacity: 1,
               scale: [1, 1.2, 1.2, 1],
               rotate: [0, 0, 180, 180, 0],
-              transition: { duration: 2, delay: 2.5 },
+              transition: { duration: 2 },
             }}
             transition={{
               duration: 2,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-              repeatDelay: 3.5,
             }}
             exit={{
               opacity: 0,
               transition: { duration: 0.5 },
+            }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
             }}
           >
             <a href="https://linkedin.com/in/andrewwallacekeir">
@@ -56,7 +66,7 @@ const Contact = () => {
               opacity: 1,
               scale: [1, 1.2, 1.2, 1],
               rotate: [0, 0, 180, 180, 0],
-              transition: { duration: 2, delay: 2.5 },
+              transition: { duration: 2 },
             }}
             transition={{
               duration: 2,
@@ -68,6 +78,10 @@ const Contact = () => {
             exit={{
               opacity: 0,
               transition: { delay: 0, duration: 0.5 },
+            }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
             }}
           >
             <a href="https://github.com/flyingisawol">
@@ -81,18 +95,20 @@ const Contact = () => {
             animate={{
               opacity: 1,
               rotate: [0, 0, 180, 180, 0],
-              transition: { duration: 2, delay: 2.5 },
+              transition: { duration: 2 },
             }}
             transition={{
               duration: 2,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-              repeatDelay: 3.5,
             }}
             exit={{
               opacity: 0,
               transition: { delay: 0, duration: 0.5 },
+            }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
             }}
           >
             <a href="mailto:ak@andrewkeir.xyz">
@@ -106,7 +122,7 @@ const Contact = () => {
             animate={{
               opacity: 1,
               rotate: [0, 0, 180, 180, 0],
-              transition: { duration: 2, delay: 2.5 },
+              transition: { duration: 2 },
             }}
             transition={{
               duration: 2,
@@ -118,6 +134,10 @@ const Contact = () => {
             exit={{
               opacity: 0,
               transition: { delay: 0, duration: 0.5 },
+            }}
+            whileHover={{
+              scale: 1.4,
+              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
             }}
           >
             <a href="http://discord.com/users/402312907209048064">

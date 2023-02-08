@@ -24,15 +24,24 @@ const About = () => {
         <div className="about1">
           Our ability to transmit information has, and will continue to
           transform us and the way in which we orient ourselves in the world.
-          I'm continuously inspired to learn, grow and to explore & iterate
+          I'm continuously inspired to learn, grow and to iterate
           toward the best version of my self.
           <br />
           <br />
         </div>
-         <div className="pop">
-            I'm AK, and I am a software engineer.
+         <motion.div 
+         className="pop"
+         initial={{
+          opacity: 0
+         }}
+         animate={{
+          opacity: 1,
+          transition: { delay: 1, duration: 1 }
+         }}
+         >
+            I'm AK, and I'm a software engineer.
             <br />
-        </div>
+        </motion.div>
         <motion.div 
         className="about1"
         initial={{
@@ -61,7 +70,7 @@ const About = () => {
         }}
         animate={{
           opacity: 1,
-          transition: {delay: 14, duration: 2}
+          transition: {delay: 10, duration: 2}
         }}
         >
           <ul>
@@ -85,7 +94,7 @@ const About = () => {
         }}
         animate={{
           opacity: 1,
-          transition: {delay: 20, duration: 2}
+          transition: {delay: 12, duration: 4}
         }}
         >
           I hope you'll take a minute or two to look around, and reach out if
@@ -94,8 +103,16 @@ const About = () => {
 
         <motion.button
         className="thruButton"
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 6, duration: 2 },
+        }}
         whileHover={{
-          scale: 1.2
+          scale: 1.2,
+          boxShadow: "0px 0px 8px rgb(255, 255, 255)"
         }}  
         >
           <Link to="/proof-of-work">
