@@ -15,12 +15,12 @@ const Contact = () => {
         }}
       >
       <motion.div className="contact-me">
-        Wow, you made it this far 👊
+         Wow. You made it this far !!    
         <br />
         <br />
-        Thank you for taking the time to look around and explore my work. <br />
+        Thanks for taking the time to look around and explore my work. <br />
         <br />
-        If you would like to chat, you can reach me at the below 🤙
+        If you would like to chat, you can reach me below 🤙
         <div className="contacts">
           <motion.div
             initial={{

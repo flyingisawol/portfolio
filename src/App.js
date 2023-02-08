@@ -1,4 +1,3 @@
-
 import Header from "./components/Header"
 import AnimatedRoutes from "./components/AnimatedRoutes"
 import "./App.css"
