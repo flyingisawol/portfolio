@@ -1,12 +1,14 @@
-import Header from "./components/Header"
 import AnimatedRoutes from "./components/AnimatedRoutes"
+import Navbar from "./components/Navbar"
 import "./App.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <>
-      <Header />
-      <AnimatedRoutes />
+    <Navbar />
+    <AnimatedRoutes />
     </>
   )
 }

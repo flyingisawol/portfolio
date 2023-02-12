@@ -1,56 +1,67 @@
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
-
 const About = () => {
   return (
-    <div className="container">
+    <motion.div 
+    className="page-container"
+    initial={{
+      opacity: 0
+    }}
+    animate={{
+      opacity: 1,
+      transition: {duration: .6}
+    }}
+    >
       <motion.div
         className="about"
-        layout
-        initial={{
+          initial={{
           opactity: 0,
+          transition: { delay: 1, duration: 0.5 },
         }}
         animate={{
           opactiy: 1,
           width: "100vw",
+          transition: { delay: 1, duration: 0.5 },
         }}
         exit={{
           opacity: 0,
           x: window.innerWidth,
-          transition: { duration: 0.3 },
+          transition: { duration: 0.5 },
         }}
       >
         <div className="about1">
           Our ability to transmit information has, and will continue to
           transform us and the way in which we orient ourselves in the world.
-          I'm continuously inspired to learn, grow and to iterate
-          toward the best version of my self.
+          I'm continuously inspired to learn, grow and to iterate toward the
+          best version of my self.
           <br />
           <br />
         </div>
-         <motion.div 
-         className="pop"
-         initial={{
-          opacity: 0
-         }}
-         animate={{
-          opacity: 1,
-          transition: { delay: 1, duration: 1 }
-         }}
-         >
-            I'm AK, and I'm a software engineer.
-            <br />
+        <motion.div
+          className="pop"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 1, duration: 1 },
+          }}
+        >
+          I'm AK, and I'm a software engineer.
+          <a href="http://linkedin.com/in/andrewwallacekeir">
+            <img src="./AK.png" alt="" />
+          </a>
         </motion.div>
-        <motion.div 
-        className="about1"
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity: 1,
-          transition: {delay: 6, duration: 2}
-        }}
+        <motion.div
+          className="about1"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 6, duration: 2 },
+          }}
         >
           <br />
           My journey with technology began back in the early 90's as a young kid
@@ -63,15 +74,15 @@ const About = () => {
           explore many things including; <br />
           <br />
         </motion.div>
-        <motion.div 
-        className="about2"
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity: 1,
-          transition: {delay: 10, duration: 2}
-        }}
+        <motion.div
+          className="about2"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 10, duration: 2 },
+          }}
         >
           <ul>
             <li>
@@ -87,40 +98,38 @@ const About = () => {
             </li>
           </ul>
         </motion.div>
-        <motion.div 
-        className="about3"
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity: 1,
-          transition: {delay: 12, duration: 4}
-        }}
+        <motion.div
+          className="about3"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 12, duration: 2 },
+          }}
         >
           I hope you'll take a minute or two to look around, and reach out if
           you feel the call to adventure !
         </motion.div>
 
         <motion.button
-        className="thruButton"
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 6, duration: 2 },
-        }}
-        whileHover={{
-          scale: 1.2,
-          boxShadow: "0px 0px 8px rgb(255, 255, 255)"
-        }}  
+          className="thruButton"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 6, duration: 2 },
+          }}
+          whileHover={{
+            scale: 1.2,
+            boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+          }}
         >
-          <Link to="/proof-of-work">
-            Portfolio
-            </Link>
+          <Link to="/proof-of-work">Portfolio</Link>
         </motion.button>
       </motion.div>
-    </div>
+    </motion.div>
   )
 }
 

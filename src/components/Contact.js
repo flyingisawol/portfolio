@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const Contact = () => {
   return (
     <>
-    <div className="container">
+    <div className="page-container">
       <motion.div
         initial={{ opactity: 0, width: 0 }}
         animate={{ opactiy: 1, width: "100vw" }}

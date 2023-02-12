@@ -35,12 +35,12 @@ const Home = () => {
             opacity: 0,
           }}
         >
-          <div className="name">
-            <h2>ANDREW KEIR</h2>
+          <div id="bootstrap-override" className="name">
+            ANDREW KEIR
           </div>
 
           <div className="name-blur">
-            <h2>ANDREW KEIR</h2>
+            ANDREW KEIR
           </div>
         </motion.div>
 
@@ -89,7 +89,12 @@ const Home = () => {
             }}
             whileHover={{
               scale: 1.4,
-              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
+              transition: {
+                delay: 0,
+                duration: 0.1,
+                type: "spring",
+                stiffness: 300,
+              },
             }}
           >
             <a href="https://linkedin.com/in/andrewwallacekeir">
@@ -119,7 +124,12 @@ const Home = () => {
             }}
             whileHover={{
               scale: 1.4,
-              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
+              transition: {
+                delay: 0,
+                duration: 0.1,
+                type: "spring",
+                stiffness: 300,
+              },
             }}
           >
             <a href="https://github.com/flyingisawol">
@@ -148,7 +158,12 @@ const Home = () => {
             }}
             whileHover={{
               scale: 1.4,
-              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
+              transition: {
+                delay: 0,
+                duration: 0.1,
+                type: "spring",
+                stiffness: 300,
+              },
             }}
           >
             <a href="mailto:ak@andrewkeir.xyz">
@@ -177,7 +192,12 @@ const Home = () => {
             }}
             whileHover={{
               scale: 1.4,
-              transition: {delay: 0, duration: .1, type: 'spring', stiffness: 300}
+              transition: {
+                delay: 0,
+                duration: 0.1,
+                type: "spring",
+                stiffness: 300,
+              },
             }}
           >
             <a href="http://discord.com/users/402312907209048064">
@@ -193,15 +213,16 @@ const Home = () => {
             }}
             animate={{
               opacity: 1,
-              transition: { delay: 6, duration: 2 },
+              transition: { delay: 3, duration: 2 },
             }}
             whileHover={{
               scale: 1.2,
-              backgroundColor: "rgb(25, 25, 25, .4)",
               boxShadow: "0px 0px 8px rgb(255, 255, 255",
             }}
           >
-            <Link to="/about">Explore</Link>
+            <Link to="/about">
+              <span class="material-symbols-outlined">arrow_downward</span>
+            </Link>
           </motion.button>
         </div>
       </motion.div>

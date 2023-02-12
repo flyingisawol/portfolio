@@ -3,49 +3,36 @@ import { Link } from "react-router-dom"
 
 const Pow = () => {
   return (
-    <div className="container">
+    <div className="page-container">
       <motion.div
         className="pow"
-        initial={{ 
-          opactity: 0, 
-          width: 0, 
+        initial={{
+          opactity: 0,
+          width: 0,
         }}
-        animate={{ 
-          opactiy: 1, 
+        animate={{
+          opactiy: 1,
           width: "100vw",
         }}
         exit={{
           opacity: 0,
           x: window.innerWidth,
-          transition: { duration: .3 },
+          transition: { duration: 0.3 },
         }}
       >
         <div className="layout">
-          <motion.div
-            className="heading4"
-            initial={{
-              opacity: 1,
-              transition: { duration: 4 },
-            }}
-            animate={{
-              opacity: 0,
-              transition: { duration: 6 },
-            }}
-            exit={{
-              opacity: 0,
-            }}
-          >
+          <motion.div className="heading4">
             <h2>Recent Projects</h2>
           </motion.div>
-          <motion.div 
-          className="projects"
-          initial={{
-            opacity: 0
-          }}
-          animate={{
-            opacity: 1,
-            transition: {duration: 1}
-          }}
+          <motion.div
+            className="projects"
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 1 },
+            }}
           >
             <Link to="https://github.com/flyingisawol/CRUD-App">
               <motion.div
@@ -62,7 +49,7 @@ const Pow = () => {
                   ease: "easeInOut",
                 }}
               >
-                <h3>Lightning Merchant Finder</h3>
+                Lightning Merchant Finder
                 <motion.div
                   className="tech"
                   initial={{
@@ -70,7 +57,7 @@ const Pow = () => {
                   }}
                   whileHover={{
                     opacity: 1,
-                    transition: {duration: .2}
+                    transition: { duration: 0.2 },
                   }}
                 >
                   Node.js / Express / MongoDB / Mongoose / Passport / Javascript
@@ -93,10 +80,8 @@ const Pow = () => {
                   ease: "easeInOut",
                 }}
               >
-                <h3>
-                  Dating App: <br />
-                  Team Project
-                </h3>
+                Dating App: <br />
+                Team Project
                 <motion.div
                   className="tech"
                   initial={{
@@ -106,9 +91,8 @@ const Pow = () => {
                     opacity: 1,
                   }}
                 >
-                  MERN Stack: <br/>
-                  MongoDB / Express / React / Node.js / <br/>
-                  + Javascript 
+                  MERN Stack: <br />
+                  MongoDB / Express / React / Node.js / <br />+ Javascript
                 </motion.div>
               </motion.div>
             </Link>
@@ -127,10 +111,8 @@ const Pow = () => {
                   ease: "easeInOut",
                 }}
               >
-                <h3>
-                  Job Search: <br />
-                  React App
-                </h3>
+                Job Search: <br />
+                React App
                 <motion.div
                   className="tech"
                   initial={{
@@ -159,7 +141,7 @@ const Pow = () => {
                   ease: "easeInOut",
                 }}
               >
-                <h3>Tic Tac Toe</h3>
+                Tic Tac Toe
                 <motion.div
                   className="tech"
                   initial={{
@@ -171,15 +153,14 @@ const Pow = () => {
                 >
                   Javascript / CSS / HTML
                 </motion.div>
-                <motion.div 
-                className="proj-img"
-                initial={{
-                  opacity: 0
-                }}
-                whileHover={{
-                  opacity: 1
-                }}
-                
+                <motion.div
+                  className="proj-img"
+                  initial={{
+                    opacity: 0,
+                  }}
+                  whileHover={{
+                    opacity: 1,
+                  }}
                 >
                   <img src="/tictactoe.png" />
                 </motion.div>
@@ -203,15 +184,15 @@ const Pow = () => {
             >
               <h2>Other Projects:</h2>
             </motion.div>
-            <motion.div 
-            className="projects"
-            initial={{
-              opacity: 0
-            }}
-            animate={{
-              opacity: 1,
-              transition: {duration: 1, delay: 1}
-            }}
+            <motion.div
+              className="projects"
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+                transition: { duration: 1, delay: 1 },
+              }}
             >
               <Link to="http://flyingisawol.com">
                 <motion.div
@@ -228,7 +209,7 @@ const Pow = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  <h3>AWOL</h3>
+                  AWOL
                   <motion.div
                     className="tech"
                     initial={{
@@ -255,7 +236,7 @@ const Pow = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  <h3>Bitcoin Mountain</h3>
+                  Bitcoin Mountain
                   <motion.div
                     className="tech"
                     initial={{
@@ -282,7 +263,7 @@ const Pow = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  <h3>Caroline White: Political Campaign</h3>
+                  Caroline White: Political Campaign
                   <motion.div
                     className="tech"
                     initial={{
@@ -309,7 +290,7 @@ const Pow = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  <h3>Melbourne Bernese</h3>
+                  Melbourne Bernese
                   <motion.div
                     className="tech"
                     initial={{
@@ -324,23 +305,21 @@ const Pow = () => {
             </motion.div>
           </div>
           <motion.button
-        className="thruButton"
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 6, duration: 2 },
-        }}
-        whileHover={{
-          scale: 1.2,
-          boxShadow: "0px 0px 8px rgb(255, 255, 255)"
-        }}  
-        >
-          <Link to="/skills">
-            Technologies
-            </Link>
-        </motion.button>
+            className="thruButton"
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              transition: { delay: 3, duration: 2 },
+            }}
+            whileHover={{
+              scale: 1.2,
+              boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+            }}
+          >
+            <Link to="/skills">Technologies</Link>
+          </motion.button>
         </div>
       </motion.div>
     </div>

@@ -4,14 +4,13 @@ import { motion } from "framer-motion"
 const Skills = () => {
   return (
     <motion.div
-      className="container"
+      className="page-container"
       initial={{
         opactity: 0,
         width: 0,
       }}
       animate={{
         opactiy: 1,
-        width: "100vw",
       }}
       exit={{
         opacity: 0,
@@ -220,9 +219,9 @@ const Skills = () => {
         Beyond the logos and the languages, I have a willingness and eagerness
         to learn, contribute & improve. <br />
         <br />
-        This is in my opinion my primary competency and value-add as technology continues to
+        This is in my opinion my primary competency and value-add. As technology continues to
         evolve, and we improve how we can integrate it to add value to our
-        lives.
+        lives, we must ourselves, improve alongside it.
         <motion.button
           className="thruButton"
           initial={{
