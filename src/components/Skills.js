@@ -208,9 +208,8 @@ const Skills = () => {
         <br />
         This is (imo) my primary competency and value-add. <br />
         <br />
-        As technology continues to
-        evolve, and we improve how we can integrate it to add value to our
-        lives, we must ourselves, improve alongside it.
+        As technology continues to evolve and we improve how we can integrate it to add value to our
+        lives, we must ourselves improve alongside it.
         <motion.button
           className="thruButton"
           initial={{
