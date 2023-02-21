@@ -4,11 +4,10 @@ import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { motion } from "framer-motion"
 
-import { Link } from "react-router-dom"
 
 const ReactNav = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="fixed-top">
       <Container>
         <Navbar.Brand href="/">andrewkeir.xyz</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

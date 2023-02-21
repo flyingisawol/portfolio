@@ -50,7 +50,7 @@ const About = () => {
         >
           I'm AK, and I'm a software engineer.
           <a href="http://linkedin.com/in/andrewwallacekeir">
-            <img src="./AK.png" alt="" />
+            <img src="/images/AK.png" alt="" />
           </a>
         </motion.div>
         <motion.div
@@ -60,7 +60,7 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 6, duration: 2 },
+            transition: { delay: 3, duration: 2 },
           }}
         >
           <br />
@@ -81,7 +81,7 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 10, duration: 2 },
+            transition: { delay: 3, duration: 2 },
           }}
         >
           <ul>
@@ -105,7 +105,7 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 12, duration: 2 },
+            transition: { delay: 3, duration: 2 },
           }}
         >
           I hope you'll take a minute or two to look around, and reach out if
@@ -119,7 +119,7 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 6, duration: 2 },
+            transition: { delay: 3, duration: 2 },
           }}
           whileHover={{
             scale: 1.2,

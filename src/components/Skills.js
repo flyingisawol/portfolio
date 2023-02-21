@@ -3,21 +3,8 @@ import { motion } from "framer-motion"
 
 const Skills = () => {
   return (
-    <motion.div
-      className="page-container"
-      initial={{
-        opactity: 0,
-        width: 0,
-      }}
-      animate={{
-        opactiy: 1,
-      }}
-      exit={{
-        opacity: 0,
-        x: window.innerWidth,
-        transition: { duration: 0.3 },
-      }}
-    >
+    <div
+      className="page-container">
       <div className="tech-stack">
         <motion.div
           initial={{
@@ -41,7 +28,7 @@ const Skills = () => {
             transition: { duration: 0.5 },
           }}
         >
-          <img src="/react.png" alt="" />
+          <img src="/images/react.png" alt="" />
         </motion.div>
         <motion.div
           initial={{
@@ -65,7 +52,7 @@ const Skills = () => {
             transition: { delay: 0, duration: 0.5 },
           }}
         >
-          <img src="/ts.png" alt="" />
+          <img src="/images/ts.png" alt="" />
         </motion.div>
         <motion.div
           initial={{
@@ -88,7 +75,7 @@ const Skills = () => {
             transition: { delay: 0, duration: 0.5 },
           }}
         >
-          <img src="/js.png" alt="" />
+          <img src="/images/js.png" alt="" />
         </motion.div>
         <motion.div
           initial={{
@@ -111,7 +98,7 @@ const Skills = () => {
             transition: { delay: 0, duration: 0.5 },
           }}
         >
-          <img src="/python.png" alt="" />
+          <img src="/images/python.png" alt="" />
         </motion.div>
         <motion.div
           initial={{
@@ -134,7 +121,7 @@ const Skills = () => {
             transition: { delay: 0, duration: 0.5 },
           }}
         >
-          <img src="/postgres.png" alt="" />
+          <img src="/images/postgres.png" alt="" />
         </motion.div>
         <motion.div
           initial={{
@@ -157,7 +144,7 @@ const Skills = () => {
             transition: { delay: 0, duration: 0.5 },
           }}
         >
-          <img src="/node.png" alt="" />
+          <img src="/images/node.png" alt="" />
         </motion.div>
         <motion.div
           initial={{
@@ -180,7 +167,7 @@ const Skills = () => {
             transition: { delay: 0, duration: 0.5 },
           }}
         >
-          <img src="/mongo.png" alt="" />
+          <img src="/images/mongo.png" alt="" />
         </motion.div>
         <motion.div
           initial={{
@@ -203,7 +190,7 @@ const Skills = () => {
             transition: { delay: 0, duration: 0.5 },
           }}
         >
-          <img src="/flask.png" alt="" />
+          <img src="/images/flask.png" alt="" />
         </motion.div>
       </div>
       <motion.div
@@ -219,7 +206,9 @@ const Skills = () => {
         Beyond the logos and the languages, I have a willingness and eagerness
         to learn, contribute & improve. <br />
         <br />
-        This is in my opinion my primary competency and value-add. As technology continues to
+        This is (imo) my primary competency and value-add. <br />
+        <br />
+        As technology continues to
         evolve, and we improve how we can integrate it to add value to our
         lives, we must ourselves, improve alongside it.
         <motion.button
@@ -229,7 +218,7 @@ const Skills = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 4, duration: 2 },
+            transition: { delay: 2, duration: 2 },
           }}
           whileHover={{
             scale: 1.2,
@@ -239,7 +228,7 @@ const Skills = () => {
           <Link to="/contact">Reach out</Link>
         </motion.button>
       </motion.div>
-    </motion.div>
+    </div>
   )
 }
 
