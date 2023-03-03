@@ -376,6 +376,13 @@ a {
 	text-align: center;
 }
 
+.project1 {
+	background-image: url(/public/images/lnmerchantfinder.png);
+	background-size: cover;
+	background-position: 45%;
+	overflow: hidden;
+}
+
 .project2 {
 	background-image: url(/public/images/getreal.jpeg);
 	background-size: cover;

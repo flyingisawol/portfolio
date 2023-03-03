@@ -26,7 +26,7 @@ const Pow = () => {
         >
           <div className="project-heading">
             <h6>Lightning Merchant Finder</h6>
-            <Link to="https://github.com/flyingisawol/CRUD-App">
+            <Link to="https://lightning-merchant-finder.fly.dev/">
               <motion.div
                 className="project1 project"
                 whileHover={{

@@ -206,10 +206,9 @@ const Skills = () => {
         Beyond the logos and the languages, I have a willingness and eagerness
         to learn, contribute & improve. <br />
         <br />
-        This is (imo) my primary competency and value-add. <br />
+        This is (in my opinion) one of my primary competencies and value-adds to any business and organisation. <br />
         <br />
-        As technology continues to evolve and we improve how we can integrate it to add value to our
-        lives, we must ourselves improve alongside it.
+        As technology evolves and we improve how we integrate it into our lives to create value, we must ourselves improve alongside it.
         <motion.button
           className="thruButton"
           initial={{
