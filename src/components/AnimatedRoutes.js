@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion"
 
 import Home from "../components/Home"
 import About from "../components/About"
-import Pow from "../components/Pow"
+import Pow2 from "../components/Pow2"
 import Skills from "../components/Skills"
 import Experience from "../components/Experience"
 import Contact from "../components/Contact"
@@ -18,7 +18,7 @@ const AnimatedRoutes = () => {
         <Routes location={location} key={location.pathname} mode={"wait"}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/proof-of-work" element={<Pow />} />
+          <Route path="/proof-of-work" element={<Pow2 />} />
           <Route path="/skills" element={<Skills />} />
           {/* <Route path="/experience" element={<Experience />} /> */}
           <Route path="/contact" element={<Contact />} />

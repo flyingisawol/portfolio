@@ -10,24 +10,19 @@ const About = () => {
     }}
     animate={{
       opacity: 1,
-      transition: {duration: .6}
     }}
     >
       <motion.div
         className="about"
           initial={{
           opactity: 0,
-          transition: { delay: 1, duration: 0.5 },
         }}
         animate={{
           opactiy: 1,
-          width: "100vw",
-          transition: { delay: 1, duration: 0.5 },
         }}
         exit={{
           opacity: 0,
           x: window.innerWidth,
-          transition: { duration: 0.5 },
         }}
       >
         <div className="about1">
@@ -45,7 +40,6 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 1, duration: 1 },
           }}
         >
           I'm AK, and I'm a software engineer.
@@ -60,7 +54,7 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 3, duration: 2 },
+            transition: { delay: 1, duration: 1 },
           }}
         >
           <br />
@@ -81,7 +75,7 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 3, duration: 2 },
+            transition: { delay: 1, duration: 1 },
           }}
         >
           <ul>
@@ -105,7 +99,7 @@ const About = () => {
           }}
           animate={{
             opacity: 1,
-            transition: { delay: 3, duration: 2 },
+            transition: { delay: 1, duration: 1 },
           }}
         >
           I hope you'll take a minute or two to look around, and reach out if

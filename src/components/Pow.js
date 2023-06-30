@@ -1,7 +1,15 @@
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
+import Swiper, { Navigation, Pagination } from "swiper"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
 
 const Pow = () => {
+  const swiper = new Swiper(".swiper", {
+    modules: [Navigation, Pagination],
+  })
+
   return (
     <motion.div
       className="page-container"
@@ -10,7 +18,6 @@ const Pow = () => {
       }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.6 },
       }}
     >
       <div className="layout">
@@ -52,8 +59,7 @@ const Pow = () => {
                 transition: { duration: 2 },
               }}
             >
-              Node.js / Express / MongoDB / 
-              Mongoose / Passport / Javascript / 
+              Node.js / Express / MongoDB / Mongoose / Passport / Javascript /
               EJS / Bootstrap
             </motion.div>
             <motion.div
@@ -66,7 +72,9 @@ const Pow = () => {
                 transition: { duration: 2 },
               }}
             >
-            <Link to="https://github.com/flyingisawol/CRUD-App">[View Code]</Link>
+              <Link to="https://github.com/flyingisawol/CRUD-App">
+                [View Code]
+              </Link>
             </motion.div>
           </div>
           <div className="project-heading">
@@ -109,7 +117,9 @@ const Pow = () => {
                 transition: { duration: 2 },
               }}
             >
-            <Link to="https://github.com/flyingisawol/getReal">[View Code]</Link>
+              <Link to="https://github.com/flyingisawol/getReal">
+                [View Code]
+              </Link>
             </motion.div>
           </div>
           <div className="project-heading">
@@ -152,7 +162,9 @@ const Pow = () => {
                 transition: { duration: 2 },
               }}
             >
-            <Link to="https://github.com/flyingisawol/job-board">[View Code]</Link>
+              <Link to="https://github.com/flyingisawol/job-board">
+                [View Code]
+              </Link>
             </motion.div>
           </div>
           <div className="project-heading">
@@ -195,7 +207,9 @@ const Pow = () => {
                 transition: { duration: 2 },
               }}
             >
-            <Link to="https://github.com/flyingisawol/tic-tac-toe">[View Code]</Link>
+              <Link to="https://github.com/flyingisawol/tic-tac-toe">
+                [View Code]
+              </Link>
             </motion.div>
           </div>
         </motion.div>

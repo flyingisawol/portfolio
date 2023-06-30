@@ -31,9 +31,10 @@ const Contact = () => {
             <img src="/images/AK.png" alt="" />
           </a>
         </div>
-        Thanks for taking the time to look around and explore my work. <br />
         <br />
-        If you would like to chat, you can reach me below 🤙
+        If you would like to chat, you can reach me below 
+        <br />
+        or dm me via the nostriChat widget below
         <div className="contacts">
           <motion.div
             initial={{
